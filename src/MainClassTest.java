@@ -12,4 +12,12 @@ public class MainClassTest extends MainClass {
         Assert.assertTrue("getClassNumber value < 45", this.getClassNumber() > 45);
     }
 
+    @Test
+    public void testGetClassString(){
+       Assert.assertTrue("getClassStreeng is not conteined Hello or hello world",
+               this.getClassString().contains("Hello") ||
+                       this.getClassString().contains("hello"));
+
+    }
+
 }
